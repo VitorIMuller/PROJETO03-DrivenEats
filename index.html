@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Driven Eats</title>
+
+</head>
+<body>
+    <div class="corpo">
+        <div class="finalizar-pedido">
+            <p class="confirmar">
+                 Confirme seu pedido
+            </p>
+            <button>
+                Tudo certo, pode pedir!
+            </button>
+        </div>
+        <div class="menu-topo">
+            <div class="titulo">
+                <p>DrivenEats</p>  
+                <div class="subtitulo">
+                    <p>Sua comida em 6 minutos</p>
+                </div>
+            </div>
+        </div>
+        <div class="pratos">
+            <div class="titulo-prato">
+                Primeiro, seu prato
+            </div>
+        <div class="selecao-pratos">
+            <div  onclick="colocarbordaprato(this)"  class="prato">
+               <img src="assets/frango_yin_yang 1.png" >
+               <p class = "nome-prato"> Frango Yin Yang </p>
+               <p class="descricao-1">Um pouco de salada Um pouco de batata</p>
+               <p class= "valor-prato">R$14,90</p>
+               <div class="icone escondido">
+                <ion-icon name="checkmark-circle"></ion-icon>           
+            </div>
+  
+            </div>
+            <div  onclick="colocarbordaprato(this)" class="prato">
+                <img src="assets/burguer.png" >
+                <p class = nome-prato> Hamburguer </p>
+                <p class="descricao-2"> Pão, 2 carnes e muuito queijo</p>
+                <p class= "valor-prato">R$25,00</p>
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+             </div>
+    
+            <div onclick="colocarbordaprato(this)" class="prato">
+                <img src="assets/sushi.png" >
+                <p class = nome-prato> Combo de Sushi </p>
+               <p class="descricao-3">10 uramakis, 10 jows, 10 niguiris</p>
+               <p class= "valor-prato">R$35,90</p>
+               <div class="icone escondido">
+                <ion-icon name="checkmark-circle"></ion-icon>           
+            </div>
+            </div>
+            <div onclick="colocarbordaprato(this)" class="prato">
+                <img src="assets/pizza.png" >
+                <p class = nome-prato> Fatia de Pizza </p>
+               <p class="descricao-4">Uma suculenta fatia de pizza</p>
+               <p class= "valor-prato">R$18,90</p>
+               <div class="icone escondido">
+                <ion-icon name="checkmark-circle"></ion-icon>           
+            </div>
+            </div>
+            <div onclick="colocarbordaprato(this)" class="prato">
+                <img src="assets/cachorrao.png" >
+                <p class = nome-prato> Hot Dog </p>
+                <p class="descricao-5">Um delicioso Hot Dog Prensado</p>
+                <p class= "valor-prato">R$19,90</p>
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+             </div>
+        </div>
+
+        </div>
+        <div class="menu-bebida">
+            <div class="titulo-bebida">
+                Agora, sua bebida
+            </div>
+            <div class="selecao-bebida">
+                <div  onclick="colocarbordabebida(this)" class="bebida">
+                    <img src="assets/coquinha_gelada 1.png" >
+                    <p class = nome-bebida> Coquinha Gelada </p>
+                    <p class="descricao-bebida-1">Lata 350ml</p>
+                    <p class= "valor-bebida">R$4,90</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle"></ion-icon>           
+                    </div>
+                 </div>
+                <div onclick="colocarbordabebida(this)" class="bebida" >
+                    <img src="assets/guarana.png" >
+                    <p class = nome-bebida> Guaraná Gelado </p>
+                    <p class="descricao-bebida-2">Lata 350ml</p>
+                    <p class= "valor-bebida">R$4,50</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle"></ion-icon>           
+                    </div>
+                </div>
+                <div onclick="colocarbordabebida(this)" class="bebida">
+                    <img src="assets/sprite.png" >
+                    <p class = nome-bebida> Sprite Gelada </p>
+                    <p class="descricao-bebida-3">Lata 350ml</p>
+                    <p class= "valor-bebida">R$4,75</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle"></ion-icon>           
+                    </div>
+                 </div>
+                <div onclick="colocarbordabebida(this)" class="bebida">
+                    <img src="assets/fanta.png" >
+                    <p class = nome-bebida> Fanta Gelada </p>
+                    <p class="descricao-bebida-4">Lata 350ml</p>
+                    <p class= "valor-bebida">R$4,80</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle"></ion-icon>           
+                    </div>
+                </div>
+                <div onclick="colocarbordabebida(this)" class="bebida">
+                    <img src="assets/pepsi.png" >
+                    <p class = nome-bebida> Pepsi Gelada </p>
+                    <p class="descricao-bebida-5">Lata 350ml</p>
+                    <p class= "valor-bebida">R$4,95</p>
+                    <div class="icone escondido">
+                        <ion-icon name="checkmark-circle"></ion-icon>           
+                    </div>
+                 </div>
+            </div>
+                
+                
+        </div>
+     
+        <div class="menu-sobremesa">
+            <div class="titulo-sobremesa">
+                Por fim, sua sobremesa
+            </div>
+        </div>
+        <div class="selecao-sobremesa">
+            <div onclick="colocarbordasobremesa(this)" class="sobremesa">
+                <img src="assets/pudim 1.png" >
+                <p class = nome-sobremesa> Pudim </p>
+                <p class="descricao-sobremesa-1">Lata 350ml</p>
+                <p class= "valor-sobremesa">R$4,90</p>
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+                 
+            </div>
+            <div onclick="colocarbordasobremesa(this)" class="sobremesa">
+                <img src="assets/bannofe.png" >
+                <p class = nome-sobremesa> Bannofe </p>
+                <p class="descricao-sobremesa-2">Uma fatia de bannofe</p>
+                <p class= "valor-sobremesa">R$8,90</p>
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+        
+            </div>
+            <div onclick="colocarbordasobremesa(this)" class="sobremesa">
+                <img src="assets/bolo-de-pote.png" >
+                <p class = nome-sobremesa> Bolo de Pote</p>
+                <p class="descricao-sobremesa-3">Delicioso, com muuito oreo</p>
+                <p class= "valor-sobremesa">R$9,90</p>
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+          
+            </div>
+            <div onclick="colocarbordasobremesa(this)" class="sobremesa">
+                <img src="assets/petit-gateau.png" >
+                <p class = nome-sobremesa> Petit Gateau  </p>
+                <p class="descricao-sobremesa-4">Uma explosão de chocolate</p>
+                <p class= "valor-sobremesa">R$24,90</p>
+               
+                <div class="icone escondido">
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+         
+            </div>
+            <div  onclick="colocarbordasobremesa(this)" class="sobremesa">
+                <img src="assets/sorvete.png" >
+                <p class = nome-sobremesa> Sorvete</p>
+                <p class="descricao-sobremesa-5">Casquinha grande</p>
+                <p class= "valor-sobremesa">R$5,90</p>
+                <div class="icone escondido" >
+                    <ion-icon name="checkmark-circle"></ion-icon>           
+                </div>
+             </div>
+           
+        </div>
+
+
+        <footer class="menu-baixo">
+            <button  onclick="confirmapedido()" class="botao-baixo">
+                <div class="conteudobotao">
+                    Selecione os 3 itens para fechar o pedido
+                </div>
+            </button>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
